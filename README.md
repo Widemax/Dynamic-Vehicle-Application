@@ -40,4 +40,4 @@ This application allows users to create vehicles, perform actions on them, and e
 
 ## Walkthrough Video
 
-Click here to watch the walkthrough video
+[Click here to watch the walkthrough video](https://youtu.be/snRLBaPvylo)
