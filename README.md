@@ -1,6 +1,6 @@
-# Dynamic Vehicle Application
+# Dynamic Database
 
-A command-line application for creating and managing vehicles (Cars, Trucks, and Motorbikes) built with TypeScript and Inquirer.
+A command-line application for managing a company's employee database, built with TypeScript, PostgreSQL, and Inquirer.
 
 ## Table of Contents
 
@@ -11,33 +11,36 @@ A command-line application for creating and managing vehicles (Cars, Trucks, and
 
 ## Description
 
-This application allows users to create vehicles, perform actions on them, and explore vehicle-specific functionalities. It includes support for Cars, Trucks, and Motorbikes, with unique actions for each type.
+This application allows users to manage departments, roles, and employees in a company database. It provides functionality to view, add, and update departments, roles, and employees, all through an intuitive command-line interface.
 
 ## Installation
 
-1. Navigate to the project directory:
+1. Clone the repository:
    ```bash
-   cd Dynamic-Vehicle-Application
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/Widemax/Dynamic-Vehicle-Application.git
-3. Install Dependencies:
+   git clone https://github.com/Widemax/Employee-Tracker.git
+2. Install Dependencies:
    ```bash
    npm install
+3. Set up the database:
+   Ensure PostgreSQL is installed and running.
+   Run the schema.sql file to create the database:
+   ```bash
+   psql -U postgres -f src/db/schema.sql
+   sql -U postgres -f src/db/seeds.sql
 
 ## Usage
 
-1. Run the application:
+1. Compile the typescript
    ```bash
-   npm start
-2. Follow the prompts to:
-
-    Create new vehicles (Cars, Trucks, Motorbikes).
-    Select existing vehicles.
-    Perform vehicle-specific actions.
-
-3. Exit the application when done.
-
+   npx tsc
+2. Run the application:
+   ```bash
+   node/dist/index.js
+   
+3. Follow the prompts to
+      View all departments, roles, or employees.
+      Add a department, role, or employee.
+      Update an employee's role.
 ## Walkthrough Video
 
-[Click here to watch the walkthrough video](https://youtu.be/snRLBaPvylo)
+[Click here to watch the walkthrough video]
